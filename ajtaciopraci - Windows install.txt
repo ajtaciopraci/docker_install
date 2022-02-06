@@ -1,0 +1,100 @@
+﻿Instalace WSL na WIN 10
+
+
+Prequisity
+
+
+Windows Terminal - store
+https://www.microsoft.com/store/productId/9N0DX20HK701
+https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.2/Git-2.35.1.2-64-bit.exe
+
+
+Instalace WSL na W10
+Při určité verzi w10 lze použít příkaz: wsl –install
+v případě starší verze w10 použijeme postup přímo ze stránek Microsoftu:
+https://docs.microsoft.com/en-us/windows/wsl/install-manual
+popř.
+https://www.omgubuntu.co.uk/how-to-install-wsl2-on-windows-10
+
+
+
+
+Poté co budeme mít nainstalovaný wsl, použijeme jako prostředí Ubuntu 20.04
+
+
+Ve storu nalezneme zde:
+
+
+https://www.microsoft.com/store/productId/9N6SVWS3RX71 
+
+
+Pro řádný chod dockeru na windows je potřeba přepnout wsl do wsl2 módu.
+po zadání přikazu ve windows terminálu:  wsl -l -v by mělo být vidět, že dané prostředí (v našem případě ubuntu) běží ve verzi: 2
+
+  
+
+
+– Total CMD 
+ukazat jak se dostaneme na wsl fs \\wsl$
+
+
+– Zapojeni uzivatelu
+
+
+
+
+–install docker desktop
+U tohoto produktu byl změněn pricing - takže může být pro vývojáře již nevýhodný
+https://www.docker.com/pricing
+Stáhneme odkazem níže:
+https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe
+Po instalaci je potřeba nastavit docker desktop o některé parametry, pro vylepšení prostředí.
+
+Viz obrazky
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+Instalace gitu
+https://github.com/git-for-windows/git/releases/download/v2.35.1.windows.2/Git-2.35.1.2-64-bit.exe
+
+
+Stáhnout, nainstalovat
+
+
+WSL - zdrojáky na windows fs vs wsl fs
+
+
+
+
+Stahneme test projekt
+
+
+Alternativy pro nahrazení docker desktop pro windows
+
+Rancher desktop - Suse Linux
+https://rancherdesktop.io/
+
+Podman - RedHat https://www.redhat.com/sysadmin/podman-windows-wsl2
+
+
+
+
+github - test projekt
+
+
+https://github.com/ajtaciopraci/docker_twitter_demo
